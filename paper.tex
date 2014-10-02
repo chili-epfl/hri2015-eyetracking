@@ -70,7 +70,7 @@ eye-tracking techniques to actual human-robot interaction situations.
 \section{Introduction}
 
 Eye tracking provides unprecedented access to the users' attention and
-engagement during interactive scenarios. Previous research has shown
+engagement during interactive scenarios. Previous research\fixme{refs} has shown
 that gaze data can be used as a proxy to understand the underlying
 socio-cognitive aspects in not only human-computer interaction but in
 human-human interaction as well. In the present decade, off the shelf
@@ -84,7 +84,7 @@ features of this subset of human-robot interaction because these features let
 the researchers design better interactive scenarios in the future. These
 features include the conceptual mapping of the sensor data visualisation and the
 robot's function and the generalising the concepts to solve a given problem in a
-contextual learning environment. ~
+contextual learning environment.
 
 Thymio II~\cite{riedo2012two} can provide salient effects onto our visual
 attention through the LEDs. We can use this feature to guide the users'
@@ -93,8 +93,29 @@ the case of interaction with the educational robots the effect of the
 interaction is to make the users understand the technical aspects of the robot
 and to make the users be able to transfer it to different domains.
 
-We present a study with combining eye tracking and human robot interaction (HRI)
-in an educational setting. ~Eye tracking data is of high temporal precision as
+We propose to use the mobile eye trackers to be able to have our participants
+freely move on the experiment site. Using mobile eye tracker poses a technical
+challenge to automatically locate where the participants are looking. This is
+not a trivial task as the visual stimulus for participants is changing with
+every bit of motion of their head. This is the reason we used fiducial-markers
+on the maze we used in the experiment so that we can reconstruct the whole maze
+even if only a part of it is the visual field of the participant.
+
+
+\paragraph{Biometric Measurements of Interaction}
+
+\fixme{organize/rewrite this paragraph}
+
+\fixme{Mention skin conductance as well}
+
+Evaluation of HRI is mostly done through qualitative questionnaires and
+qualitative data (interaction videos, interviews for example). The physiological
+measurements such as eye tracking being precise, pertinent and portable at the
+same time provides an added value to the researcher.  However, this needs to be
+complemented with the qualitative data as well.
+
+
+Eye-tracking data is of high temporal precision as
 compared to some of the physiological data sources such as fMRI or other
 biometric devices used to measure the palpitation and the body temperature. The
 eye tracking devices are portable enough as opposed to the bulky apparatus used
@@ -103,19 +124,15 @@ access to the users' attention than other portable and physiological data
 sources such as EEG; this makes eye-tracking data a pertinent source to measure
 attention.
 
-Evaluation of HRI is mostly done through qualitative questionnaires and
-qualitative data (interaction videos, interviews for example). The physiological
-measurements such as eye tracking being precise, pertinent and portable at the
-same time provides an added value to the researcher.  However, this needs to be
-complemented with the qualitative data as well.
+The prime advantage of using mobile eye-tracking is that the users' interaction
+with the robot can still be ecologically valid. On the other hand, using fMRI
+for evaluating HRI reduces the interaction to a video of the robot only
+~\cite{rosenthal2013neural}.
 
-We propose to use the mobile eye trackers to be able to have our participants
-freely move on the experiment site. Using mobile eye tracker poses a technical
-challenge to automatically locate where the participants are looking. This is
-not a trivial task as the visual stimulus for participants is changing with
-every bit of motion of their head. This is the reason we used fiducial-markers
-on the maze we used in the experiment so that we can reconstruct the whole maze
-even if only a part of it is the visual field of the participant.
+Another advantage of using mobile eye-tracking to assess HRI situations, is that
+the data provides direct and noise free access to the users' attention. While in
+other physiological measures for attention, such as EEG, the data has a lot of
+noise and the relation to the attention is very task-specific.
 
 
 %Our working hypothesis is that with careful mapping between the LED
@@ -587,18 +604,13 @@ effect during the interaction.
 %behaviour was not at all transparent in the former two conditions. This might
 %have caused the participants to put more effort in understanding the behaviour.
 %Therefore, they performed better.
+
 \section{Conclusion}
 
 
 We demonstrated that eye-tracking data can provide several process
 variables to assess not only the task-based performance of the
-participants but also to analyse HRI situations. The prime advantage of using
-mobile eye-tracking is that the users' interaction with the robot can
-still be ecologically valid. On the other hand, using fMRI for
-evaluating HRI reduces the interaction to a video of the robot only
-~\cite{rosenthal2013neural}.
-
-Another advantage of using mobile eye-tracking to assess HRI situations, is that the data provides direct and noise free access to the users' attention. While in other physiological measures for attention, such as EEG, the data has a lot of noise and the relation to the attention is very task-specific.
+participants but also to analyse HRI situations.
 
 The advantages of mobile eye-tracking come with an additional cost. As
 we mentioned earlier, the automatic localisation of the gaze pointer on
