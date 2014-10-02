@@ -136,38 +136,66 @@ the users' attention and engagement.
 Evaluation of HRI is mostly done through qualitative questionnaires and
 qualitative data (interaction videos, interviews for example). The physiological
 measurements such as eye tracking being precise, pertinent and portable at the
-same time provides an added value to the researcher.  Eye-tracking data is of high temporal precision as compared to some of the physiological data sources such as fMRI or other
-biometric devices used to measure the palpitation and the body temperature. The
-eye tracking devices are portable enough as opposed to the bulky apparatus used
-in fMRI~\cite{rosenthal2013neural}.  Eye tracking data provides more direct
-access to the users' attention than other portable and physiological data
-sources such as EEG and wristbands measuring skin conductance and pulse rate; this makes eye-tracking data a pertinent source to measure attention.
+same time provides an added value to the researcher.  Eye-tracking data is of
+high temporal precision as compared to some of the physiological data sources
+such as fMRI or other biometric devices used to measure the palpitation and the
+body temperature. The eye tracking devices are portable enough as opposed to the
+bulky apparatus used in fMRI~\cite{rosenthal2013neural}. Eye tracking data
+provides more direct access to the users' attention than other portable and
+physiological data sources such as EEG and wristbands measuring skin conductance
+and pulse rate; this makes eye-tracking data a pertinent source to measure
+attention.
 
 The prime advantage of using mobile eye-tracking is that the users' interaction
 with the robot can still be ecologically valid. On the other hand, using fMRI
-for evaluating HRI reduces the interaction to a video of the robot only
-~\cite{rosenthal2013neural}.
+for evaluating HRI reduces the interaction to a video of the robot
+only~\cite{rosenthal2013neural}.
 
 Another advantage of using mobile eye-tracking to assess HRI situations, is that
 the data provides direct and noise free access to the users' attention. While in
 other physiological measures for attention, such as EEG, the data has a lot of
 noise and the relation to the attention is very task-specific.
 
-
 In a nutshell, the use of gaze data as an assessment of the human-robot
-interaction in an educational setting provides future research
-prospects. The data acquisition is a better trade-off between the
-ecological validity of the experiment (as there cannot be an interaction
-with the robot fMRI data acquisition) and the precision of the data
-stream (wristbands for measuring the palpitation and the temperature).
+interaction in an educational setting provides future research prospects. The
+data acquisition is a better trade-off between the ecological validity of the
+experiment (as there cannot be an interaction with the robot fMRI data
+acquisition) and the precision of the data stream (wristbands for measuring the
+palpitation and the temperature).
 
 \paragraph{Article overview}
-\fixme{write it}
+
+The article is structured as follow: section~\ref{et_assessing} presents the
+main lines of research in eye-tracking-based assessment of cognitive
+tasks and interaction. It evidences the breadth of the field, both on individual
+and social tasks. Section~\ref{et_robotics} contrasts this literature with the
+current state-of-the-art of eye-tracking in HRI. We distinguish here two main
+applications: eye-tracking as an \emph{interaction modality} and eye-tracking as
+an \emph{interaction assessment} tool. It appears that the literature in both
+these fields is scarce.
+
+Section~\ref{method} presents in a brief yet exhaustive way eye-tracking as an
+investigation method: we introduce the main eye-tracking techniques (including
+mobile eye-tracking and dual eye-tracking) and discuss their respective domains
+of application. We then present five important techniques for eye-tracking data
+analysis and emphasise the analysis techniques that are the most relevant to the
+study of social interaction.
+
+Next, section~\ref{application} presents a case study with 52 subjects
+interacting with a robot. The study acts both as a demonstration of the
+integration of eye-tracking in HRI studies, and as an example of a possible
+eye-tracking setup. Then, section~\ref{interpretation} goes over the analysis of
+the study data and its interpretation, and illustrates this process.
+
+We conclude the article with a summary of the strengths of eye-tracking to
+analyse the complex socio-cognitive situations that characterise human-robot
+interaction, as well as a few notes on the limitations of this method.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Eye Tracking as a Tool for Assessing Social Interaction}
+\label{et_assessing}
 
 \subsection{Gaze patterns and Expertise/Task based performance}
 
@@ -201,6 +229,7 @@ task-based performance in collaborative settings. As a measure of joint attentio
 
 
 \section{State of Eye Tracking in Human-Robot Interaction}
+\label{et_robotics}
 
 The usage of eye-tracking methods in HRI is very sparse. It must be noted that to our best knowledge only very few attempts to use eye-tracking as an interaction modality or as an interaction assessment technique in HRI.
 
@@ -228,9 +257,8 @@ was consistent irrespectively of the ambiguity of the situation. The video based
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Method description}
+\label{method}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Eye-tracking}
 
 
@@ -290,7 +318,12 @@ summarised in~\cite{duchowski2007eye}.
 \end{enumerate}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Method Application Example}
+\label{application}
+
 In this section, we present a mobile eye-tracking study with an educational robot Thymio II. The study exemplifies one of the use cases of the mobile eye-tracking. One part of the target (the robot) was moving, whereas the rest of the maze (or playground, figure~\ref{playground}, as we refer to it in the rest of this paper) was stationary. The participants were allowed to move but most of them remained seated for the duration of the experiment. For the purpose of the eye-tracking data analysis, we used the proportions of fixations on different  area of interest on the playground.
 
 We propose to use the mobile eye trackers to be able to have our participants
@@ -567,17 +600,12 @@ and the first Improvement ($t(50)=-2.13$, Pearson's correlation = -0.29, p=.03).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Interpreting the results}
+\label{interpretation}
 
 We present an exemplar eye-tracking study in the context of human-robot
 interaction within an educational setting. In this section we give an example of "how to interpret the eye-tracking results". The fact that participants have higher average fixation duration on the robot during the observation phase in the {\sf NONE} condition than the other two conditions (Figure 4) is not surprising as displaying visual information on the robot induces a saliency effect on the attention and the gaze is attracted towards the salient feature in the field of view. 
 
 The fact that the participants in the {\sf RANDOM} or {\sf NONE} visualisation condition improved more than those with {\sf TRUE} condition is surprising (Figure 5). There are two plausible explanations. The first is that participants who see the robot in the {\sf TRUE} condition have a stronger belief that the robot always behaves the same. They see the LEDs of the robot turning on and therefore the robot still works. The ones with {\sf NONE} visualisation do not have an indication whether the robot works the same way as in the observation phase, and start experimenting earlier. The second explanation is that the participants in {\sf TRUE} condition just put the obstacles out of detection range, because they could see different display information and concluded therefore it may behave differently.
-
-
-
-
-
-
 
 The fact that the participants in the {\sf RANDOM} or {\sf NONE} visualisation
 condition improved more than those with {\sf TRUE} condition is surprising
@@ -608,7 +636,11 @@ effect during the interaction.
 %have caused the participants to put more effort in understanding the behaviour.
 %Therefore, they performed better.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Conclusion}
+\label{conclusion}
 
 The task that we have presented was initially motivated by those two questions:
 
