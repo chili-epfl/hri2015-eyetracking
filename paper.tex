@@ -155,17 +155,6 @@ even if only a part of it is the visual field of the participant.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{State of Eye Tracking in Human-Robot Interaction}
-
-\subsection{Eye Tracking as an Interaction Modality}
-
-\subsection{Eye Tracking as a tool to Measure Joint Attention}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Eye Tracking as a Tool for Assessing Social Interaction}
 
 \subsection{Gaze patterns and Expertise/Task based performance}
@@ -188,6 +177,8 @@ lines in the program faster than the novices. In a collaborative Tetris game,
 Tetronimoes while novices allocate more attention to the new pieces falling from
 the top.
 
+\subsection{Gaze patterns and Collaborative work}
+
 Our previous work also show a clear relation between gaze patterns and
 task-based performance. In a pair-programming task, \cite{jermann2012effects}
 showed that the good performing pairs have more synchronised gaze on different
@@ -202,45 +193,38 @@ that previous research provides insights about the relationship between the gaze
 patterns and the behavioural and task-based performance indicators in diverse
 scenarios.
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{State of Eye Tracking in Human-Robot Interaction}
+
+\subsection{Eye Tracking as an Interaction Modality}
+
+Controlling robot with gaze
+
+\subsection{Eye Tracking as a tool to Measure Joint Attention}
+
 It must be noted that to our best knowledge only very few studies have
 investigated how eye-tracking could be used to assess HRI. In an eye-tracking
 study, in the context of human robot interaction, \cite{staudte2009visual} found
 that when the robot provides a matching visual and verbal reference to an object
 the participants were more likely to look at the correct objects. This result
-was consistent irrespectively of the ambiguity of the situation.
+was consistent irrespectively of the ambiguity of the situation. 
+SAY ABOUT THE VIDEO BASED INTERACTION 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Method Description}
 
-\subsection{Gaze measures}
 
-The most common form of eye-tracking data aggregation are the fixations.
-Fixations depict the periods in the user's observation when the user
-attends a relatively small part of the visual stimulus for a relatively
-longer period of time. The various fixation detection algorithms are
-summarised in~\cite{duchowski2007eye}. Following are the two gaze measures, derived
-from the fixations, which we used in the present work.
 
-Average fixation duration on the robot: We measured the amount of time a
-participant looks at the robot and averaged this duration for the number
-of fixations on the robot for the particular participant.
-
-Average fixation on the reference side: The main area (right hand side
-of figure 2) in the observation phase is treated as the reference side
-in the interaction phase. The rationale behind keeping the lines drawn
-by the robot in the observation phase is for the participants to be able
-to refer to the prior behaviour of the robot in the interaction phase. We
-measured the amount of time a participant looks at the reference side
-and averaged this duration for the number of fixations on the reference
-side for the particular participant.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Field of Application and Deployment}
+\section{Method description}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -278,11 +262,16 @@ side for the particular participant.
 \subsection{Data and Analysis}
 
 \begin{enumerate}
-\item Fixaitons
+\item Fixations: The most common form of eye-tracking data aggregation are the fixations.
+Fixations depict the periods in the user's observation when the user
+attends a relatively small part of the visual stimulus for a relatively
+longer period of time. The various fixation detection algorithms are
+summarised in~\cite{duchowski2007eye}. 
+
 \item Saccades and transitions
-\item Smooth Persuite
+\item Smooth Pursuit
 \item Areas of Interest
-\item Heatmaps
+\item Heat-maps
 
 \end {enumerate}
 
@@ -400,6 +389,21 @@ exceptions). ~The age distribution was narrow, with a mean of 19.7 and a
 standard deviation of 1.97. There were 13 female and 39 male
 participants. In the three experimental conditions, {\sf NONE}, {\sf RANDOM} and
 {\sf TRUE}, there were 18, 17 and 17 participants respectively.
+
+\subsection{Eye-tracking measures}
+
+Average fixation duration on the robot: We measured the amount of time a
+participant looks at the robot and averaged this duration for the number
+of fixations on the robot for the particular participant.
+
+Average fixation on the reference side: The main area (right hand side
+of figure 2) in the observation phase is treated as the reference side
+in the interaction phase. The rationale behind keeping the lines drawn
+by the robot in the observation phase is for the participants to be able
+to refer to the prior behaviour of the robot in the interaction phase. We
+measured the amount of time a participant looks at the reference side
+and averaged this duration for the number of fixations on the reference
+side for the particular participant.
 
 \subsection{Performance measures}
 
