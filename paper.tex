@@ -78,58 +78,6 @@ human-human interaction as well. In the present decade, off the shelf
 eye-trackers have become readily available to the researchers to assess the
 users' attention and engagement.
 
-%On the other hand, educational robots can be of great use in making young school
-%kids interested in technological developments~\cite{cooper1999robots,
-%wyffels2010building}. It is important to know about the key socio-cognitive
-%features of this subset of human-robot interaction because these features let
-%the researchers design better interactive scenarios in the future. These
-%features include the conceptual mapping of the sensor data visualisation and the
-%robot's function and the generalising the concepts to solve a given problem in a
-%contextual learning environment.
-%
-%Thymio II~\cite{riedo2012two} can provide salient effects onto our visual
-%attention through the LEDs. We can use this feature to guide the users'
-%attention in a way that the effectiveness of the interaction is maximised. In
-%the case of interaction with the educational robots the effect of the
-%interaction is to make the users understand the technical aspects of the robot
-%and to make the users be able to transfer it to different domains.
-
-
-
-%Our working hypothesis is that with careful mapping between the LED
-%visualisations and the behaviour of the robot we can induce the understanding of
-%the functionality of the robot very easily. We propose to use the gaze data to
-%verify this hypothesis. With eye-tracking data we can judge whether the mapping
-%between the behaviour and visual actuators is useful or not for the participants'
-%understanding.  Moreover, we hypothesise that the good performers will be able
-%to anticipate the robot's motion. Eye-tracking data can also be useful to verify
-%the anticipation hypothesis.
-%
-%The experiment consists in two phases. The first phase is the observation phase
-%during which the participants watch the robot move and detect an obstacle in a
-%``playground''. The second phase requires the participants to interact with the
-%robot by placing an obstacle in its path to make it detect the obstacle before
-%reaching a certain target.  After each phase the participant explain the
-%behaviour of the robot. The sensor data was visualised through LEDs with three
-%visualisation conditions: {\sf TRUE} visualisation, {\sf RANDOM} visualisation and {\sf NONE}
-%visualisation. Through this experiment we investigate the following research
-%questions:
-%
-%\begin{enumerate}
-%    \item Are there different gaze patterns for different levels of performance
-%during the interaction? Moreover, can we see any anticipation patterns
-%for the good performers?
-%
-%    \item How does displaying the sensor information on the robot' body as a
-%visual cue affects the gaze and performance of the participants?
-%\end{enumerate}
-%
-%The rest of the paper is organised as follows. The second section gives
-%a brief review of the eye-tracking research done to quantify the
-%expertise and performance. The third section presents the specificities
-%of the study. The fourth section lists the main results. The fifth
-%section discusses the results. Finally, the sixth section concludes the
-%paper.
 
 
 \paragraph{Biometric Measurements of Interaction}
@@ -281,16 +229,19 @@ good control for experimental conditions.
 \label{method}
 
 \subsection{Eye-tracking}
-
+First, we introduce the basic eye-tracking setups, technical steps in mobile eye-tracking and different use cases of mobile eye-tracking.
 
 \subsubsection{Apparatus}
 
-\fixme{tell about the spatial and temporal resolution of different eye-trackers}
+Most eye trackers work by projecting infrared light on the pupil and measuring the reflection with one or more cameras. . Following are the typical setups for the eye-trackers used in research:
+
 
 \begin{enumerate}
-\item Stationary
-\item Mobile 
-\item Dual eye-tracking
+\item Stationary: The stationary eye-trackers are widely used for the controlled laboratory experiments. These eye-trackers have a separate eye-tracking device (camera, infrared source and microprocessor) and a monitor or a monitor embedded with different parts  of the eye-tracking devices. The data rate is usually higher than the mobile eye-trackers (ranging between 60 Hz to 2000 Hz). The accuracy of current devices is about 0.5 degrees, which correspond to 0.35 mm for a user whose head is placed at 40 cm from the screen.  The setup needs the heads of the participants to be fixed using a opthalmologic head rest for better data quality. 
+
+\item Mobile: Mobile eye-trackers are useful to conduct more ecologically valid and naturalistic experiments. These eye-trackers have a scene camera in the front to record the visual field of the participants. Present mobile eye-trackers have a data rate of 30 Hz and a spatial accuracy equal to the stationary eye-trackers.
+
+\item Dual eye-tracking: Dual eye-tracking requires synchronisation of two eye-trackers, so that the researchers can record the gaze data for a pair of collaborators without any lag (as the clocks of two systems can not be perfectly synchronised). \cite{nussli2011dual} explored and compared different ways to synchronise two eye-trackers.
 
 \end {enumerate}
 
@@ -317,13 +268,9 @@ good control for experimental conditions.
 \subsection{Data and Analysis}
 
 \begin{enumerate}
-\item Fixations: The most common form of eye-tracking data aggregation are the fixations.
-Fixations depict the periods in the user's observation when the user
-attends a relatively small part of the visual stimulus for a relatively
-longer period of time. The various fixation detection algorithms are
-summarised in~\cite{duchowski2007eye}. 
+\item Fixations: The most common form of eye-tracking data aggregation are the fixations. Fixations depict the periods in the user's observation when the user attends a relatively small part of the visual stimulus for a relatively longer period of time. The various fixation detection algorithms are summarised in~\cite{duchowski2007eye}. 
 
-\item Saccades and transitions
+\item Saccades and transitions: Two fixations are connected by a saccade. Saccades are the sudden variations in the eye-movements. While analysing saccades, there are two 
 \item Smooth Pursuit
 \item Areas of Interest
 \item Heat-maps
@@ -489,42 +436,6 @@ side for the particular participant.
 
 \subsection{Performance measures}
 
-%We had two measures of performance. First measure was a rating given to
-%the responses that participants gave to the question about the
-%functionality of the robot. Second measure was the distance from the
-%target in the interaction phase.
-
-%We transcribed the responses to perform a rating scheme on the level of
-%abstraction and correctness. A low level of abstraction consists in
-%describing the functionality of the robot in the terms of the electric
-%or programming aspects of the robot, a high level represents describing
-%the behaviour. For the levels of correctness, we categorised the
-%responses into correct or incorrect response. In TABLE I. we present
-%sample responses for the different categories.
-
-%\begin{table}[ht!]
-%    \centering
-%    \footnotesize
-%    \begin{tabular}{ccp{4.5cm}}
-%        \toprule
-%        Correct. & Abstract. & Sample answer \\
-%        \midrule
-%        \textit{incorrect} & \textit{low} & ``The robot turns at a given distance in respect to a colour, defined in the program.''\\ 
-%        \midrule
-%        \textit{incorrect} & \textit{high} & `Grey is the most dangerous, so the
-%        robot turn really early.''\\ 
-%        \midrule
-%        \textit{correct} & \textit{low} & ``The grey obstacle reflects a lot,
-%        the robot sends light. At a certain threshold the robot turns.'' \\ 
-%        \midrule
-%        \textit{correct} & \textit{high} & ``The grey obstacle is shinier, so
-%        more reflective, and better detectable.''\\ 
-%        \bottomrule
-%    \end{tabular}
-%    \caption{Sample answers for all classes}
-%
-%    \label{sample_answer}
-%\end{table}
 
 We measured the distances from the target were measured for all 5 trials. As
 a matter of fact, as soon as the principle of the robot was deemed to be
@@ -534,25 +445,7 @@ turned instantly. So the most significant distance measure was the
 improvement between the first and second trial. It is referred to as
 improvement in the following sections.
 
-%Incorrect answers were further classified into 4 categories; we present
-%each category accompanied by a sample response:
-%
-%\begin{itemize}
-%    \item The participant did not respond or offer a possible explanation: ``I
-%        really don't know how the robot works''.
-%
-%    \item The participant identified a wrong cause for the behaviour of the robot:
-%        ``The robot notices the tags on the side''.
-%
-%    \item The participant held the code responsible for the cause of different
-%        behaviour: ``The robot turns at a given distance in respect to a color,
-%        defined in the program''.
-%
-%    \item The participant tried to explain by analogies or did not explain the
-%        robots behaviour at an understandable level: ``Grey is the most
-%        dangerous, so the robot turns really early''.
-%
-%\end{itemize}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -676,13 +569,6 @@ the reference given in observation phase. This also verifies our working
 hypothesis that a carefully designed mapping between the robot's
 behaviour and its visual actuators can help in maximising the learning
 effect during the interaction.
-
-%Another plausible explanation for the participants in {\sf NONE} and {\sf RANDOM} condition
-%being better performers than the {\sf TRUE} condition during the interaction phase
-%comes from the transparency of the robot's behaviour. The robot's
-%behaviour was not at all transparent in the former two conditions. This might
-%have caused the participants to put more effort in understanding the behaviour.
-%Therefore, they performed better.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
