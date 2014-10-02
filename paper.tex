@@ -152,8 +152,21 @@ section discusses the results. Finally, the sixth section concludes the
 paper.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Related Work: Gaze patterns and Expertise/Task based performance}
+\section{State of Eye Tracking in Human-Robot Interaction}
+
+\subsection{Eye Tracking as an Interaction Modality}
+
+\subsection{Eye Tracking as a tool to Measure Joint Attention}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Eye Tracking as a Tool for Assessing Social Interaction}
+
+\subsection{Gaze patterns and Expertise/Task based performance}
 
 Several scholars related gaze patterns with level of expertise.
 \cite{hasse2012measure} in an air traffic-monitoring task found out that the
@@ -194,11 +207,44 @@ that when the robot provides a matching visual and verbal reference to an object
 the participants were more likely to look at the correct objects. This result
 was consistent irrespectively of the ambiguity of the situation.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Method Description}
+
+\subsection{Gaze measures}
+
+The most common form of eye-tracking data aggregation are the fixations.
+Fixations depict the periods in the user's observation when the user
+attends a relatively small part of the visual stimulus for a relatively
+longer period of time. The various fixation detection algorithms are
+summarised in~\cite{duchowski2007eye}. Following are the two gaze measures, derived
+from the fixations, which we used in the present work.
+
+Average fixation duration on the robot: We measured the amount of time a
+participant looks at the robot and averaged this duration for the number
+of fixations on the robot for the particular participant.
+
+Average fixation on the reference side: The main area (right hand side
+of figure 2) in the observation phase is treated as the reference side
+in the interaction phase. The rationale behind keeping the lines drawn
+by the robot in the observation phase is for the participants to be able
+to refer to the prior behaviour of the robot in the interaction phase. We
+measured the amount of time a participant looks at the reference side
+and averaged this duration for the number of fixations on the reference
+side for the particular participant.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Experiment}
+\section{Field of Application and Deployment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Method Application}
 
 \subsection{Setup and Conditions}
 
@@ -376,32 +422,9 @@ each category accompanied by a sample response:
 
 \end{itemize}
 
-\subsection{Gaze measures}
-
-The most common form of eye-tracking data aggregation are the fixations.
-Fixations depict the periods in the user's observation when the user
-attends a relatively small part of the visual stimulus for a relatively
-longer period of time. The various fixation detection algorithms are
-summarised in~\cite{duchowski2007eye}. Following are the two gaze measures, derived
-from the fixations, which we used in the present work.
-
-Average fixation duration on the robot: We measured the amount of time a
-participant looks at the robot and averaged this duration for the number
-of fixations on the robot for the particular participant.
-
-Average fixation on the reference side: The main area (right hand side
-of figure 2) in the observation phase is treated as the reference side
-in the interaction phase. The rationale behind keeping the lines drawn
-by the robot in the observation phase is for the participants to be able
-to refer to the prior behaviour of the robot in the interaction phase. We
-measured the amount of time a participant looks at the reference side
-and averaged this duration for the number of fixations on the reference
-side for the particular participant.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Results}
+\subsection{Results}
 
 We found no bias for age, gender, expertise, student status or condition
 in respect to the correctness, abstraction and type of mistake made for
@@ -411,7 +434,7 @@ answers given. We could not find any anticipation patterns in the
 eye-tracking data. We found some other relation between the different
 measures. We present the results in following subsections.
 
-\subsection{Average fixation duration on the robot during observation phase
+\subsubsection{Average fixation duration on the robot during observation phase
 vs.~condition}
 
 The average fixation duration on the robot during observation phase
@@ -427,7 +450,7 @@ sensor data visualisation has an effect on the users' attention.
     \label{res1}
 \end{figure}
 
-\subsection{First improvement vs.~condition}
+\subsubsection{First improvement vs.~condition}
 
 The first improvement is significantly more in {\sf NONE} and {\sf RANDOM}
 conditions (Figure~\ref{res2}) than in the {\sf TRUE} condition ($F[2,49]=3.75$, p =
@@ -440,7 +463,7 @@ conditions (Figure~\ref{res2}) than in the {\sf TRUE} condition ($F[2,49]=3.75$,
     \label{res2}
 \end{figure}
 
-\subsection{Average fixation duration on the reference side during interaction
+\subsubsection{Average fixation duration on the reference side during interaction
 phase vs.~condition}
 
 The average fixation time on the reference side of the playground
@@ -456,7 +479,7 @@ p = .02).
     \label{res3}
 \end{figure}
 
-\subsection{First improvement vs number of fixations on reference side}
+\subsubsection{First improvement vs number of fixations on reference side}
 
 There is a significant negative correlation between the number of
 fixations on the reference side (Figure~\ref{res4}) during the interaction phase
