@@ -7,7 +7,7 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \graphicspath{{figures/}}
-
+\usepackage{amsthm}
 \usepackage{booktabs}
 
 \newcommand{\eg}{{\textit{e.g.~}}}
@@ -58,8 +58,8 @@ are applicable to HRI.
 
 Techniques based on mobile eye-tracking as well as the main analysis approaches
 for eye-tracking data are first exhaustively presented, with an emphasis on
-those we believe relevant to robotics. We then report on a study involving the
-educational robot Thymio II~\cite{riedo2012two} with 52 participants: the
+those we believe relevant to robotics. We then report on a study involving an
+educational robot with 52 participants: the
 students have to explain a pre-programmed behaviour of the robot with or without
 the help of visual cues. The study setup and analysis illustrate how to apply
 eye-tracking techniques to actual human-robot interaction situations.
@@ -83,32 +83,20 @@ users' attention and engagement.
 \paragraph{Biometric Measurements of Interaction}
 
 Evaluation of HRI is mostly done through qualitative questionnaires and
-qualitative data (interaction videos, interviews for example). The physiological
-measurements such as eye tracking being precise, pertinent and portable at the
-same time provides an added value to the researcher.  Eye-tracking data is of
-high temporal precision as compared to some of the physiological data sources
-such as fMRI or other biometric devices used to measure the palpitation and the
-body temperature. The eye tracking devices are portable enough as opposed to the
-bulky apparatus used in fMRI~\cite{rosenthal2013neural}. Eye tracking data
-provides more direct access to the users' attention than other portable and
-physiological data sources such as EEG and wristbands measuring skin conductance
-and pulse rate; this makes eye-tracking data a pertinent source to measure
-attention.
+qualitative data (interaction videos, interviews for example). There are some physiological devices as well. For example fMRI, EEG, eye-tracking and skin conductance. These measures have been used in the research where the researchers attempt to get a proxy for the users' attention.
 
-The prime advantage of using mobile eye-tracking is that the users' interaction
-with the robot can still be ecologically valid. On the other hand, using fMRI
-for evaluating HRI reduces the interaction to a video of the robot
-only~\cite{rosenthal2013neural}.
+Functional MRI (fMRI) data gives a direct access to the brain signals and so does EEG data.  The main disadvantage of using the fMRI data to assess the human robot interaction situations is that the apparatus is bulky and the interaction is limited to a few videos only. This is not the case with EEG but EEG has too much noise in the data due to involuntary actions of the human  body, which makes the assessment of the behaviour difficult. The devices that measure skin conductance and the pulse rate are  small and portable; but the relation between the data they collect and the user's behaviour is questionable as the skin conductance and pulse rate measures are highly environment dependent.
 
-Another advantage of using mobile eye-tracking to assess HRI situations, is that
-the data provides direct and noise free access to the users' attention. While in
-other physiological measures for attention, such as EEG, the data has a lot of
-noise and the relation to the attention is very task-specific.
+
+The prime advantage of using mobile eye-tracking is that the users' interaction with the robot can still be ecologically valid. On the other hand, using fMRI for evaluating HRI reduces the interaction to a video of the robot only~\cite{rosenthal2013neural}. Another advantage of using mobile eye-tracking to assess HRI situations, is that the data provides direct and noise free access to the users' attention. While in other physiological measures for attention, such as EEG, the data has a lot of noise and the relation to the attention is  task-specific.
+
+Eye tracking being precise, pertinent and portable at the same time provides an added value to the researcher.  Eye-tracking data is of high temporal precision as compared to some of the physiological data sources such as fMRI or other biometric devices used to measure the palpitation and the body temperature. The eye tracking devices are portable enough as opposed to the bulky apparatus used in fMRI~\cite{rosenthal2013neural}. Eye tracking data provides more direct access to the users' attention than other portable and physiological data sources such as EEG and wristbands measuring skin conductance and pulse rate; this makes eye-tracking data a pertinent source to measure attention.
+
 
 In a nutshell, the use of gaze data as an assessment of the human-robot
 interaction in an educational setting provides future research prospects. The
 data acquisition is a better trade-off between the ecological validity of the
-experiment (as there cannot be an interaction with the robot fMRI data
+experiment (as there cannot be an interaction with the robot during fMRI data
 acquisition) and the precision of the data stream (wristbands for measuring the
 palpitation and the temperature).
 
@@ -120,8 +108,8 @@ tasks and interaction. It evidences the breadth of the field, both on individual
 and social tasks. Section~\ref{et_robotics} contrasts this literature with the
 current state-of-the-art of eye-tracking in HRI. We distinguish here two main
 applications: eye-tracking as an \emph{interaction modality} and eye-tracking as
-an \emph{interaction assessment} tool. It appears that the literature in both
-these fields is scarce.
+an \emph{interaction assessment} tool. It appears that the literature for both
+these applications is scarce.
 
 Section~\ref{method} presents in a brief yet exhaustive way eye-tracking as an
 investigation method: we introduce the main eye-tracking techniques (including
@@ -146,11 +134,13 @@ interaction, as well as a few notes on the limitations of this method.
 \section{Eye Tracking as a Tool for Assessing Social Interaction}
 \label{et_assessing}
 
-\subsection{Gaze patterns and Expertise/Task based performance}
+There are two main fields of research in eye-tracking with the human users.  First, the attempts to correlate the gaze patterns of participants in different expertise levels and/or different task based performance levels. Second, the  attempts to analyse  the socio-cognitive constructs in joint tasks like collaboration quality and collaborative performance.
+
+\paragraph{Gaze patterns and Expertise/Task based performance}
 
 Several scholars related gaze patterns with level of expertise.
-\cite{hasse2012measure} in an air traffic-monitoring task found out that the
-experts looked less at the scenario-specific information than novices.
+In an air traffic-monitoring task, \cite{hasse2012measure}  found out that the
+experts looked \emph{less} at the scenario-specific information than novices.
 \cite{eivazi2012gaze, law2004eye, tien2010measuring} studied the effect of
 expertise on the gaze patterns in different surgical tasks and concluded that
 experts look less at the instruments than the novices, instead they focus more
@@ -166,11 +156,11 @@ lines in the program faster than the novices. In a Tetris game,
 Tetronimoes while novices allocate more attention to the new pieces falling from
 the top.
 
-\subsection{Gaze patterns and Collaborative performance}
+\paragraph{Gaze patterns and Collaborative performance}
 
 Previous work also show a clear relation between gaze patterns and task-based
 performance in collaborative settings. As a measure of joint attention in
-collaborative settings  \cite{richardson2007art} proposed gaze recurrence
+collaborative settings  \cite{richardson2007art} proposed \emph{gaze cross recurrence}
 between the collaborators and showed it to be correlated with the collaboration
 quality of the pair. In a pair-programming task, \cite{jermann2012effects}
 showed that the good performing pairs have more synchronised gaze on different
@@ -180,94 +170,78 @@ to the data-flow of the program than the poor performing pairs. Moreover,
 \cite{sharma2013understanding} showed that while describing the functionality of
 a program the well performing teams had more gaze on the variable modification
 parts in the program while poor performing teams have equal distribution of gaze
-on different parts of the program during similar phase of the task.  Thus we see
-that previous research provides insights about the relationship between the gaze
+on different parts of the program during similar phase of the task.  
+
+We see that previous research provides insights about the relationship between the gaze
 patterns and the behavioural and task-based performance indicators in diverse
-scenarios.
+scenarios including both the individual users and in collaborative settings. We believe that the application of eye-tracking methods can provide useful insights about human-robot interaction.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{State of Eye Tracking in Human-Robot Interaction}
+\paragraph{State of Eye Tracking in Human-Robot Interaction}
 \label{et_robotics}
 
-The usage of eye-tracking methods in HRI is very sparse. It must be noted that
-to our best knowledge only very few attempts to use eye-tracking as an
-interaction modality or as an interaction assessment technique in HRI.
+The usage of eye-tracking methods in HRI is  sparse. It must be noted that to our best knowledge there are only a few attempts where the experiments have been conducted to use eye-tracking as an interaction modality or as an interaction assessment technique in HRI.
 
-\subsection{Eye Tracking as an Interaction Modality}
+\paragraph{Eye Tracking as an Interaction Modality}
 
-To guide the motion of a robot \cite{bhuiyan2004tracking} used real time  gaze
-data of a human user. The users were able to provide the visual and geometrical
-motion information to the robot by moving their eyes in different parts of the
-human-robot interface.
+To guide the motion of a robot \cite{bhuiyan2004tracking} used real time  gaze data of a human user. The users were able to provide the visual and geometrical motion information to the robot by moving their eyes in different parts of the human-robot interface.
 
-\subsection{Eye Tracking as a tool to Assess Interaction Algorithms}
+\paragraph{Eye Tracking as a tool to Assess Interaction Algorithms}
 
-To evaluate the effectiveness of the motion planning algorithm for a robot
-\cite{dehais2011physiological} used eye-tracking techniques. In an object
-hand-over task between a robot and a human, the authors compared various motion
-planning algorithms based on the gaze of the human.
+To evaluate the effectiveness of the motion planning algorithm for a robot \cite{dehais2011physiological} used eye-tracking techniques. In an object hand-over task between a robot and a human, the authors compared various motion planning algorithms based on the gaze of the human.
 
-\subsection{Eye Tracking as a tool to Assess Joint Attention}
+\paragraph{Eye Tracking as a tool to Assess Joint Attention}
 
-In an eye-tracking study, in the context of human robot interaction,
-\cite{staudte2009visual} found that when the robot provides a matching visual
-and verbal reference to an object the participants were more likely to look at
-the correct objects. This result was consistent irrespectively of the ambiguity
-of the situation. The video based interaction modality was used by the authors.
-This constraints the  interaction of the human-robot dyad to just a video.
-However, the stimulus (video) for eye-tracking provides strong contrast and a
-good control for experimental conditions.
+In an eye-tracking study, in the context of human robot interaction, \cite{staudte2009visual} found that when the robot provides a matching visual and verbal reference to an object the participants were more likely to look at the correct objects. This result was consistent irrespectively of the ambiguity of the situation. The authors did not conduct a face to face interaction between the human and the robot instead they used the videos of robot performing the disambiguation task.This constraints the  interaction of the human-robot dyad to just a video.However, the stimulus (video) for eye-tracking provides strong contrast and a good control for experimental conditions.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Method description}
+
+In this section, we present an exhaustive summary of eye-tracking apparatus, setups (especially focusing on mobile eye-tracking), analysis methods and use cases for mobile eye-tracking. 
+
 \label{method}
 
 \subsection{Eye-tracking}
-First, we introduce the basic eye-tracking setups, technical steps in mobile eye-tracking and different use cases of mobile eye-tracking.
+First, we introduce the basic eye-tracking setups and technical steps in mobile eye-tracking and different use cases of mobile eye-tracking.
 
 \subsubsection{Apparatus}
 
-Most eye trackers work by projecting infrared light on the pupil and measuring the reflection with one or more cameras. . Following are the typical setups for the eye-trackers used in research:
+Most eye trackers work by projecting infrared light on the pupil and measuring the reflection with one or more cameras. Following are the typical setups for the eye-trackers used in research:
 
 
-\begin{enumerate}
-\item Stationary: The stationary eye-trackers are widely used for the controlled laboratory experiments. These eye-trackers have a separate eye-tracking device (camera, infrared source and microprocessor) and a monitor or a monitor embedded with different parts  of the eye-tracking devices. The data rate is usually higher than the mobile eye-trackers (ranging between 60 Hz to 2000 Hz). The accuracy of current devices is about 0.5 degrees, which correspond to 0.35 mm for a user whose head is placed at 40 cm from the screen.  The setup needs the heads of the participants to be fixed using a opthalmologic head rest for better data quality. 
+ \textbf {Stationary:} The stationary eye-trackers are widely used for the controlled laboratory experiments. These eye-trackers have a separate eye-tracking device (camera, infrared source and microprocessor) and a monitor or a monitor embedded with different parts  of the eye-tracking devices. The data rate is usually higher than the mobile eye-trackers (ranging between 60 Hz to 2000 Hz). The accuracy of current devices is about 0.5 degrees, which correspond to 0.35 mm for a user whose head is placed at 40 cm from the screen.  The setup needs the heads of the participants to be fixed using a opthalmologic head rest for better data quality. 
 
-\item Mobile: Mobile eye-trackers are useful to conduct more ecologically valid and naturalistic experiments. These eye-trackers have a scene camera in the front to record the visual field of the participants. Present mobile eye-trackers have a data rate of 30 Hz and a spatial accuracy equal to the stationary eye-trackers.
 
-\item Dual eye-tracking: Dual eye-tracking requires synchronisation of two eye-trackers, so that the researchers can record the gaze data for a pair of collaborators without any lag (as the clocks of two systems can not be perfectly synchronised). \cite{nussli2011dual} explored and compared different ways to synchronise two eye-trackers.
+\textbf {Mobile}: Mobile eye-trackers are useful to conduct more ecologically valid and naturalistic experiments. These eye-trackers have a scene camera in the front to record the visual field of the participants. Present mobile eye-trackers have a data rate of 30 Hz and a spatial accuracy equal to the stationary eye-trackers.
 
-\end {enumerate}
+ \textbf {Dual eye-tracking}: Dual eye-tracking requires synchronisation of two eye-trackers, so that the researchers can record the gaze data for a pair of collaborators without any lag (as the clocks of two systems can not be perfectly synchronised). \cite{nussli2011dual} explored and compared different ways to synchronise two eye-trackers.
+
+
 
 
 \subsubsection{Mobile Eye-tracking setup}
 
-Mobile eye-tracking requires more caution during data collection, as the heads and the bodies (in some cases) of the participants are free to move. We list the main challenges here:
-
-\begin{enumerate}
-\item Calibration: The calibration step of the mobile eye-trackers is crucial, as the head of the participant is always moving. The experimenter needs to make sure that while calibrating 
-\item Recording Scene and gaze: The mobile eye-trackers record the scene video and the gaze pointer information is given in the coordinate system of this video.
-\item Localisation of gaze pointer:  Using mobile eye tracker poses a technical challenge to automatically locate where the participants are actually looking. This is not a trivial task as the visual stimulus for participants is changing with every bit of motion of their head. 
-
-\end {enumerate}
+Mobile eye-tracking requires more caution during data collection, as the heads and the bodies (in some cases) of the participants are free to move. The calibration step of the mobile eye-trackers is crucial, as the head of the participant is always moving. The experimenter needs to make sure that while calibrating the head of the participant have minimal movement.The mobile eye-trackers record the scene video and the gaze pointer information is given in the coordinate system of this video. Hence localisation of gaze pointer in terms of real world is necessary. Using mobile eye tracker poses a technical challenge to automatically locate where the participants are actually looking. This is not a trivial task as the visual stimulus for participants is changing with every bit of motion of their head. To solve this problem we need to put markers or patterns in the scene.
 
 
 \subsection{Data and Analysis}
 
-\begin{enumerate}
-\item Fixations: The most common form of eye-tracking data aggregation are the fixations. Fixations depict the periods in the user's observation when the user attends a relatively small part of the visual stimulus for a relatively longer period of time. The various fixation detection algorithms are summarised in~\cite{duchowski2007eye}. 
+Eye-trackers have a high data rate which translates to the fact that from a small duration of interaction the collected data can be  overwhelming in size. We present a few ways to aggregate the data which are mostly used in eye-tracking research and are useful for analysing behaviour.
 
-\item Saccades and transitions: Two fixations are connected by a saccade. Saccades are the sudden variations in the eye-movements (Figure \ref{aoi}). There are two main ways to analyse saccades: 1) saccade lengths are indicative of the amount of change in the attention; and 2) the two ends of a saccade denote a transition between two areas of scene/screen .
 
-\item Smooth Pursuit: This is a special type of event that gives insights about continuously following a moving object in the field of view. These events are analysed for their durations, especially when there is a moving target that the participants need to observe.
+ \textbf {Fixations}: The most common form of eye-tracking data aggregation are the fixations. Fixations depict the periods in the user's observation when the user attends a relatively small part of the visual stimulus for a relatively longer period of time. The various fixation detection algorithms are summarised in~\cite{duchowski2007eye}.  Fixation durations on a specific area of the screen are directly associated with the attentive period for that specific area. Also the distribution of the fixations over the scene tells us that where and how much the participants were paying attention.
+ 
+ \textbf {Saccades and transitions}: Two fixations are connected by a saccade. Saccades are the sudden variations in the eye-movements (Figure \ref{aoi}). There are two main ways to analyse saccades: 1) saccade lengths are indicative of the amount of change in the attention; and 2) the two ends of a saccade denote a transition between two areas of scene/screen .
 
-\item Areas of Interest (AOI):  AOIs are those parts of the scene/screen that the experimenter wants to analyse the interaction (with the interface or with another user / robot). These AOIs are usually based on the hypotheses of the experiment. For example, if in a study with Massive Open Online Courses (MOOCs) (Figure \ref{aoi}) the screen can divided into various lines in the video lecture of the MOOC. Once the screen has been divided into AOIs, we can compare the gaze distribution for different users and /or different experimental conditions.
+ \textbf {Smooth Pursuit}: This is a special type of event that gives insights about continuously following a moving object in the field of view. These events are analysed for their durations, especially when there is a moving target that the participants need to observe.
+
+ \textbf {Areas of Interest (AOI)}:  AOIs are those parts of the scene/screen that the experimenter wants to analyse the interaction (with the interface or with another user / robot). These AOIs are usually based on the hypotheses of the experiment. For example, if in a study with Massive Open Online Courses (MOOCs) (Figure \ref{aoi}) the screen can divided into various lines in the video lecture of the MOOC. Once the screen has been divided into AOIs, we can compare the gaze distribution for different users and /or different experimental conditions.
 
 \begin{figure}
     \centering
@@ -277,7 +251,7 @@ Mobile eye-tracking requires more caution during data collection, as the heads a
 \end{figure}
 
 
-\item Heat maps: Heat maps are classical data visualisation tools. In terms of visualising eye-tracking data the heat maps show the distribution of the gaze. The distribution of the gaze then can be analysed for different user classes (for usability studies), experimental conditions or task based performance (Figure \ref{heatMap}  \cite{sharma2014how}). The mathematical details about how to create the heat maps can be found in \cite{duchowski2007eye}. 
+ \textbf {Heat maps}: Heat maps are classical data visualisation tools. In terms of visualising eye-tracking data the heat maps show the distribution of the gaze. The distribution of the gaze then can be analysed for different user classes (for usability studies), experimental conditions or task based performance (Figure \ref{heatMap} ). The mathematical details about how to create the heat maps can be found in \cite{duchowski2007eye}. 
 
 \begin{figure}
     \centering
@@ -287,34 +261,27 @@ Mobile eye-tracking requires more caution during data collection, as the heads a
 \end{figure}
 
 
-\end {enumerate}
+
 
 
 \subsection{Analysing social behaviour}
 
 Dual eye-tracking is more complicated to analyse than the solo eye-tracking, for the sole reason of the social dimension being involved in the users' behaviour. Following are the two main points to keep in mind while analysing the social behaviour of a collaborating pair of users: 
 
-\begin{enumerate}
-
-\item Joint attention: Maintaining common grounds among the collaborators is key to success during collaborators. This is achieved via references to the objects visible by both the participants in a pair. There are two events that create a moment of joint attention: 1) eye-voice span \cite{griffin2000eyes}: the referencing partner looks at the referred site before referring to it; and 2) voice-eye span \cite{allopenna1998tracking}: after the reference the non- referencing partner looks at the referred site. These moments of joint attention help them to create the common ground in the first place and further, they help in maintaining the common ground. The time lag between the speaker's gaze and listener's gaze at the referred object is called gaze cross recurrence \cite{richardson2007art}. The gaze cross recurrence has been shown to be correlated with the collaboration quality and joint task performance \cite{nussli2011dual}.
 
 
-\item Interaction episodes: Apart from moments of joint attention, collaboration contains sequence of actions and communicative moves. To build a model of the interaction quality, it is essential to put temporal markers in the flow of interaction. \cite{sharma2012gaze} defined the segments of interaction by detecting stable (looking at a small set of objects) and together (looking at the same set of objects) moments. Simply put,
-for automatic assessment of quality of interaction, we need to find out how to automatically segment the interaction based on gaze data. It is important to keep in mind that different level of gaze aggregation can help in finding evidences for different granularities of task decomposition.
-\end{enumerate}
+ \textbf {Joint attention}: Maintaining common grounds among the collaborators is key to success during collaboration. This is achieved via references to the objects visible by both the participants in a pair. There are two events that create a moment of joint attention: 1) eye-voice span \cite{griffin2000eyes}: the referencing partner looks at the referred site before referring to it; and 2) voice-eye span \cite{allopenna1998tracking}: after the reference the non-referencing partner looks at the referred site. These moments of joint attention help them to create the common ground in the first place and further, they help in maintaining the common ground. The time lag between the speaker's gaze and listener's gaze at the referred object is called \emph{gaze cross recurrence} \cite{richardson2007art}. The gaze cross recurrence has been shown to be correlated with the collaboration quality and joint task performance \cite{nussli2011dual}.
+
+
+ \textbf {Interaction episodes:} Apart from moments of joint attention, collaboration contains sequence of actions and communicative moves. To build a model of the interaction quality, it is essential to put temporal markers in the flow of interaction. \cite{sharma2012gaze} defined the segments of interaction by detecting \emph{stable} (looking at a small set of objects) and \emph{together} (looking at the same set of objects) moments. Simply put, for automatic assessment of quality of interaction, we need to automatically segment the interaction based on gaze data. It is important to keep in mind that different level of gaze aggregation can help in finding evidences for different granularities of task decomposition.
+
 
 
 \subsubsection{Use cases for mobile eye-tracking} 
 
-The main challenge with the mobile eye-tracking is that one of the target and the observer is moving, sometimes both are moving. This sometimes results in having partial target in the field of view of the observer. Hence, there is a methodological problem to solve, which is "how to track the target when it is partially out of sight?" To accomplish this we need to put fiducial markers in the scene or extract some salient features of the target which make it easy to automatically locate the gaze pointer on the target and/or the scene. There are several use cases of mobile eye-tracking, we categorise them in following three categories:
+Mobile eye-tracking is  useful when the target and/or the observer is moving, or the experimental setup requires one or both of them to move. For example, in child-robot interaction situations, we can use mobile eye-trackers to see how much the child look at the robot and what are the actions robot does which attract most of the child's attention. Also in the case of robots designed for the elderly and demented people we could assess the effects of robots' actions on the gaze of the users.
 
-\begin{enumerate}
-\item Moving target, stationary observer: in these cases, putting fiducial markers or detecting salient features on the target and the scene is necessary to recreate the true scene while analysing the gaze data.
-\item Stationary target, moving observer: in these cases a three dimensional model of the target can be of great aid when it comes to locating where the observer was looking on the target. The 3D model of the target then be divided into different planes of interest (instead of AOIs) and this makes the gaze analysis easy.
-\item Moving target, moving observer: this is the most complicated use case in terms of data analysis and re-localisation of the gaze pointer on the scene. The complexity of both these tasks is dependent on the relative motion of the target and the observer. Some mobile eye-trackers are equipped with infrared sensors. If we put infrared emitting diodes in the scene and on the target, it will help in locating the gaze pointer when both the target and observer are moving.
-\end{enumerate}
-
-
+Having the target and/or the  observer moving may result in having partial target in the field of view of the observer. Hence, there is a methodological problem to solve, which is "how to track the target when it is partially out of sight?" To accomplish this we need to put fiducial markers in the scene or extract some salient features of the target which make it easy to automatically locate the gaze pointer on the target and/or the scene
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -322,25 +289,13 @@ The main challenge with the mobile eye-tracking is that one of the target and th
 \section{Method Application Example}
 \label{application}
 
-In this section, we present a mobile eye-tracking study with an educational
-robot Thymio II. The study exemplifies one of the use cases of the mobile
-eye-tracking. One part of the target (the robot) was moving, whereas the rest of
-the maze (or playground, figure~\ref{playground}, as we refer to it in the rest
-of this paper) was stationary. The participants were allowed to move but most of
-them remained seated for the duration of the experiment. For the purpose of the
-eye-tracking data analysis, we used the proportions of fixations on different
-area of interest on the playground.
-
-We propose to use the mobile eye trackers to be able to have our participants
-freely move on the experiment site. We used fiducial-markers
-on the playground we used in the experiment so that we can reconstruct the whole maze
-even if only a part of it is the visual field of the participant.
+In this section, we present a mobile eye-tracking study with an educational robot Thymio II \cite{riedo2012two}. The study exemplifies one of the use cases of the mobile eye-tracking. One part of the target (the robot) was moving, whereas the rest of the maze (or playground, as we refer to it in the rest of this paper) was stationary. The participants were allowed to move but most of them remained seated for the duration of the experiment.  We decided to use the mobile eye trackers to be able to have our participants freely move on the experiment site. 
 
 \subsection{Setup and Conditions}
 
 Thymio II is a small robot designed for education for 6 to 16 year old
 children~\cite{magnenat2012programming, riedo2012two}. Users can interact with
-it via buttons and distance sensors. The robot can display its states via many
+it via buttons and distance sensors. The robot can display its states via 
 LEDs and its motion. We programmed it to show the value of the front IR-sensor
 on its top. The display consists of 8 LEDs (Figure~\ref{thymio}).
 
@@ -369,8 +324,7 @@ The playground (Figure~\ref{playground}) is designed in order to allow the
 participants to get a reference of the previous behaviour of the robot, as well
 as to allow us to localise the position of the robot, the position of the
 obstacles and the position of the gaze on the video recorded from the
-eye-tracker. The localisation is made possible by the use of unique fiducial
-markers on the playground. On the right hand side, the observation phase takes
+eye-tracker.  On the right hand side, the observation phase takes
 place and there will be the reference for the black and white obstacles. On the
 left hand side, the interaction takes place.
 
@@ -393,14 +347,12 @@ the participant almost every frame of the eye-tracking video. To cope up
 with the changing observation field we decided to put an array of
 fiducial markers on the playground. Using the fiducial markers enabled
 us to recreate the whole playground for every frame in the video
-recorded from the eye-tracker's camera (Figure~\ref{expe}).
+recorded from the eye-tracker's camera (Figure~\ref{maze}).
 
-\subsection{Procedure}
+\subsection{Procedure and Participants}
 
-Upon their arrival at the experiment site, the participants signed a consent
-form and answered a small questionnaire about demographics and participant's
-experience with educational robots (this we later consider as expertise). The
-participants were placed in front of the playground (Figure~\ref{expe}) and were
+We recruited 52 participants for the experiment. All of them were
+students from ANONYMOUS, ANONYMOUS. The participants were placed in front of the playground (Figure~\ref{expe}) and were
 equipped with the SMI eye-tracking glasses. The eye-tracker records the gaze
 data at 30Hz with an accuracy of 0.5 degrees at 40 centimetres distance; and the
 scene camera of the eye-tracking glasses records the video in HD.  The actual
@@ -437,17 +389,6 @@ response to which is considered as a final answer.
 \end{figure}
 
 
-\vspace{1cm}
-\subsection{Participants}
-
-We recruited 52 participants for the experiment. All of them were
-students from École Polytechnique Fédérale de Lausanne, Switzerland.
-Most of them were in their first year undergraduate program (with two
-exceptions). ~The age distribution was narrow, with a mean of 19.7 and a
-standard deviation of 1.97. There were 13 female and 39 male
-participants. In the three experimental conditions, {\sf NONE}, {\sf RANDOM} and
-{\sf TRUE}, there were 18, 17 and 17 participants respectively.
-
 \subsection{Eye-tracking measures}
 
 Average fixation duration on the robot: We measured the amount of time a
@@ -466,33 +407,23 @@ side for the particular participant.
 \subsection{Performance measures}
 
 
-We measured the distances from the target were measured for all 5 trials. As
-a matter of fact, as soon as the principle of the robot was deemed to be
-understood by the participants, almost all the participants behaved the
-same way. On the first try almost every participant failed and the robot
-turned instantly. So the most significant distance measure was the
-improvement between the first and second trial. It is referred to as
-improvement in the following sections.
+We measured the distances from the target for all 5 trials. As soon as the principle of the robot was deemed to be understood by the participants, almost all the participants behaved the same way. On the first try almost every participant failed and the robot turned instantly. So the most significant distance measure was the
+improvement between the first and second trial. It is referred to as improvement in the next section.
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Interpreting the Results}
+\section{Results and Interpretation}
 \label{interpretation}
+
+
 
 \subsection{Results}
 
-We found no bias for age, gender, expertise, student status or condition
-in respect to the correctness, abstraction and type of mistake made for
-the final answer. Surprisingly there is no correlation between the
-visualisation condition and the correctness or abstraction of the
-answers given. We could not find any anticipation patterns in the
-eye-tracking data. We found some other relation between the different
-measures. We present the results in following subsections.
 
-\subsubsection{Average fixation duration on the robot during observation phase
+\paragraph{Average fixation duration on the robot during observation phase
 vs.~condition}
 
 The average fixation duration on the robot during observation phase
@@ -508,7 +439,7 @@ sensor data visualisation has an effect on the users' attention.
     \label{res1}
 \end{figure}
 
-\subsubsection{First improvement vs.~condition}
+\paragraph{First improvement vs.~condition}
 
 The first improvement is significantly more in {\sf NONE} and {\sf RANDOM}
 conditions (Figure~\ref{res2}) than in the {\sf TRUE} condition ($F[2,49]=3.75$, p =
@@ -521,7 +452,7 @@ conditions (Figure~\ref{res2}) than in the {\sf TRUE} condition ($F[2,49]=3.75$,
     \label{res2}
 \end{figure}
 
-\subsubsection{Average fixation duration on the reference side during interaction
+\paragraph{Average fixation duration on the reference side during interaction
 phase vs.~condition}
 
 The average fixation time on the reference side of the playground
@@ -537,7 +468,7 @@ p = .02).
     \label{res3}
 \end{figure}
 
-\subsubsection{First improvement vs number of fixations on reference side}
+\paragraph{First improvement vs number of fixations on reference side}
 
 There is a significant negative correlation between the number of
 fixations on the reference side (Figure~\ref{res4}) during the interaction phase
@@ -577,18 +508,6 @@ participants in {\sf TRUE} condition just put the obstacles out of detection
 range, because they could see different display information and concluded
 therefore it may behave differently.
 
-The fact that the participants in the {\sf RANDOM} or {\sf NONE} visualisation
-condition improved more than those with {\sf TRUE} condition is surprising
-(Figure 5). There are two plausible explanations. The first is that
-participants who see the robot in the {\sf TRUE} condition have a stronger
-belief that the robot always behaves the same. They see the LEDs of the
-robot turning on and therefore the robot still works. The ones with {\sf NONE}
-visualisation do not have an indication whether the robot works the same
-way as in the observation phase, and start experimenting earlier. The
-second is that the participants in {\sf TRUE} condition just put the obstacles
-out of detection range, because they could see different display
-information and concluded therefore it may behave differently.
-
 The fact that participants have lower average fixation duration on the
 reference side in the interaction phase in the {\sf TRUE} condition than the
 other two conditions actually supports the explanation that participants
@@ -598,6 +517,8 @@ the reference given in observation phase. This also verifies our working
 hypothesis that a carefully designed mapping between the robot's
 behaviour and its visual actuators can help in maximising the learning
 effect during the interaction.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
