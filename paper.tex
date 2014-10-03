@@ -248,12 +248,42 @@ Most eye trackers work by projecting infrared light on the pupil and measuring t
 
 \subsubsection{Mobile Eye-tracking setup}
 
+Mobile eye-tracking requires more caution during data collection, as the heads and the bodies (in some cases) of the participants are free to move. We list the main challenges here:
+
 \begin{enumerate}
-\item Calibration
-\item Recording Scene 
-\item Recording Gaze
+\item Calibration: The calibration step of the mobile eye-trackers is crucial, as the head of the participant is always moving. The experimenter needs to make sure that while calibrating 
+\item Recording Scene and gaze: The mobile eye-trackers record the scene video and the gaze pointer information is given in the coordinate system of this video.
+\item Localisation of gaze pointer:  Using mobile eye tracker poses a technical challenge to automatically locate where the participants are actually looking. This is not a trivial task as the visual stimulus for participants is changing with every bit of motion of their head. 
 
 \end {enumerate}
+
+
+\subsection{Data and Analysis}
+
+\begin{enumerate}
+\item Fixations: The most common form of eye-tracking data aggregation are the fixations. Fixations depict the periods in the user's observation when the user attends a relatively small part of the visual stimulus for a relatively longer period of time. The various fixation detection algorithms are summarised in~\cite{duchowski2007eye}. 
+
+\item Saccades and transitions: Two fixations are connected by a saccade. Saccades are the sudden variations in the eye-movements. There are two main ways to analyse saccades: 1) saccade lengths are indicative of the amount of change in the attention; and 2) the two ends of a saccade denote a transition between two areas of scene/screen.
+
+\item Smooth Pursuit: This is a special type of event that gives insights about continuously following a moving object in the field of view. These events are analysed for their durations, especially when there is a moving target that the participants need to observe.
+
+\item Areas of Interest (AOI):   
+\item Heat-maps: 
+
+\end {enumerate}
+
+
+\subsection{Analysing social behaviour}
+
+\begin{enumerate}
+
+\item Joint attention: Maintaining common grounds among the collaborators is key to success during collaborators. This is achieved via references to the objects visible by both the participants in a pair. There are two events that create a moment of joint attention: 1) eye-voice span \cite{griffin2000eyes}: the referencing partner looks at the referred site before referring to it; and 2) voice-eye span \cite{allopenna1998tracking}: after the reference the non- referencing partner looks at the referred site. These moments of joint attention help them to create the common ground in the first place and further, they help in maintaining the common ground. The time lag between the speaker's gaze and listener's gaze at the referred object is called gaze cross recurrence \cite{richardson2007art}. The gaze cross recurrence has been shown to be correlated with the collaboration quality and joint task performance \cite{nussli2011dual}.
+
+
+\item Interaction episodes: Apart from moments of joint attention, collaboration contains sequence of actions and communicative moves. To build a model of the interaction quality, it is essential to put temporal markers in the flow of interaction. \cite{sharma2012gaze} defined the segments of interaction by detecting stable (looking at a small set of objects) and together (looking at the same set of objects) moments. Simply put,
+for automatic assessment of quality of interaction, we need to find out how to automatically segment the interaction based on gaze data. It is important to keep in mind that different level of gaze aggregation can help in finding evidences for different granularities of task decomposition.
+\end{enumerate}
+
 
 \subsubsection{Use cases for mobile eye-tracking} 
 
@@ -262,27 +292,6 @@ Most eye trackers work by projecting infrared light on the pupil and measuring t
 \item Moving target, stationary observer
 \item Stationary target, moving observer
 \item Moving target, moving observer
-\end{enumerate}
-
-
-\subsection{Data and Analysis}
-
-\begin{enumerate}
-\item Fixations: The most common form of eye-tracking data aggregation are the fixations. Fixations depict the periods in the user's observation when the user attends a relatively small part of the visual stimulus for a relatively longer period of time. The various fixation detection algorithms are summarised in~\cite{duchowski2007eye}. 
-
-\item Saccades and transitions: Two fixations are connected by a saccade. Saccades are the sudden variations in the eye-movements. While analysing saccades, there are two 
-\item Smooth Pursuit
-\item Areas of Interest
-\item Heat-maps
-
-\end {enumerate}
-
-
-\subsection{Analysing social behaviour}
-
-\begin{enumerate}
-\item Joint attention
-\item interaction episodes
 \end{enumerate}
 
 
@@ -302,10 +311,7 @@ eye-tracking data analysis, we used the proportions of fixations on different
 area of interest on the playground.
 
 We propose to use the mobile eye trackers to be able to have our participants
-freely move on the experiment site. Using mobile eye tracker poses a technical
-challenge to automatically locate where the participants are looking. This is
-not a trivial task as the visual stimulus for participants is changing with
-every bit of motion of their head. This is the reason we used fiducial-markers
+freely move on the experiment site.This is the reason we used fiducial-markers
 on the maze we used in the experiment so that we can reconstruct the whole maze
 even if only a part of it is the visual field of the participant.
 
