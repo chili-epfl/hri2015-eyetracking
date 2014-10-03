@@ -272,21 +272,18 @@ Mobile eye-tracking requires more caution during data collection, as the heads a
 \begin{figure}
     \centering
     \includegraphics[width=0.4\linewidth]{nokia.jpg}
-    \caption{Example of dividing a screen in Areas of interest.
-    source: http://eyetracking.com.ua/eng/visualization/12.html}
+    \caption{Example of dividing a screen in Areas of interest. Source: http://eyetracking.com.ua/eng/visualization/12.html}
     \label{aoi}
 \end{figure}
 
 
-\item Heat maps: Heat maps are classical data visualisation tools. In terms of visualising eye-tracking data the heat maps show the distribution of the gaze. The distribution of the gaze then can be analysed for different user classes (for usability studies), experimental conditions or task based performance (Figures \ref{heatMapGood} and \ref {heatMapBad} \cite{sharma2014how}). The mathematical details about how to create the heat maps can be found in \cite{duchowski2007eye}. 
+\item Heat maps: Heat maps are classical data visualisation tools. In terms of visualising eye-tracking data the heat maps show the distribution of the gaze. The distribution of the gaze then can be analysed for different user classes (for usability studies), experimental conditions or task based performance (Figure \ref{heatMap}  \cite{sharma2014how}). The mathematical details about how to create the heat maps can be found in \cite{duchowski2007eye}. 
 
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{heat-map}
-    \caption{Example heat map for a MOOC student who performed well in the posttest.
-    Example heat map for a MOOC student who performed poor in the posttest.
-    source: source: \cite{sharma2014how}}
-    \label{heatMapBad}
+    \caption{Left : Example heat map for a MOOC student who performed poor in the posttest. Right: Example heat map for a MOOC student who performed well in the posttest. Source: \cite{sharma2014how}}
+    \label{heatMap}
 \end{figure}
 
 
@@ -309,15 +306,14 @@ for automatic assessment of quality of interaction, we need to find out how to a
 
 \subsubsection{Use cases for mobile eye-tracking} 
 
-There are several use cases of mobile eye-tracking, we categorise them in following three categories:
+The main challenge with the mobile eye-tracking is that one of the target and the observer is moving, sometimes both are moving. This sometimes results in having partial target in the field of view of the observer. Hence, there is a methodological problem to solve, which is "how to track the target when it is partially out of sight?" To accomplish this we need to put fiducial markers in the scene or extract some salient features of the target which make it easy to automatically locate the gaze pointer on the target and/or the scene. There are several use cases of mobile eye-tracking, we categorise them in following three categories:
 
 \begin{enumerate}
-\item Moving target, stationary observer
-\item Stationary target, moving observer
-\item Moving target, moving observer
+\item Moving target, stationary observer: in these cases, putting fiducial markers or detecting salient features on the target and the scene is necessary to recreate the true scene while analysing the gaze data.
+\item Stationary target, moving observer: in these cases a three dimensional model of the target can be of great aid when it comes to locating where the observer was looking on the target. The 3D model of the target then be divided into different planes of interest (instead of AOIs) and this makes the gaze analysis easy.
+\item Moving target, moving observer: this is the most complicated use case in terms of data analysis and re-localisation of the gaze pointer on the scene. The complexity of both these tasks is dependent on the relative motion of the target and the observer. Some mobile eye-trackers are equipped with infrared sensors. If we put infrared emitting diodes in the scene and on the target, it will help in locating the gaze pointer when both the target and observer are moving.
 \end{enumerate}
 
-Next, we present an example of one of the use cases of mobile eye-tracking. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -336,8 +332,8 @@ eye-tracking data analysis, we used the proportions of fixations on different
 area of interest on the playground.
 
 We propose to use the mobile eye trackers to be able to have our participants
-freely move on the experiment site.This is the reason we used fiducial-markers
-on the maze we used in the experiment so that we can reconstruct the whole maze
+freely move on the experiment site. We used fiducial-markers
+on the playground we used in the experiment so that we can reconstruct the whole maze
 even if only a part of it is the visual field of the participant.
 
 \subsection{Setup and Conditions}
