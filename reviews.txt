@@ -1,0 +1,472 @@
+HRI 2015 Full Papers
+
+Reviews of submission #1576: "Eye-Tracking: a New Look at Human-Robot
+Interaction Assessment"
+
+------------------------ Submission 1576, Review 4 ------------------------
+
+Reviewer:           primary
+
+Expertise
+
+   3  (Knowledgeable)
+
+Summary of (Theme-specific) Contributions
+
+   This paper builds a general case for the use of eye-tracking in HRI. It
+   includes a user study to demonstrate the authors’ claims.
+
+Meta Review
+
+   Strengths:
+
+   All three reviewers agreed that eye-tracking is an important tool for HRI
+   research.
+
+   Reviewers saw potential in this work (1, 2).
+
+   The experiment scenario was viewed as somewhat novel (2) and over a
+   relatively large population (3).
+
+   Weaknesses:
+
+   All three reviewers expressed serious concern over missing literature,
+   which is problematic due to the authors claim that there is sparse
+   literature on eye-tracking in HRI (as noted by 3). Two reviewers
+   highlighted “exhaustive” as being incorrect (1, 2) and several
+   reviewers felt there were incorrect claims about the state of the art in
+   eye-tracking (2, 3).
+
+   A reviewer felt the methods were not adequately documented and that
+   additional statistical analyses are needed (3). 
+
+   There was concern over the lack of comparison to other techniques within
+   the actual study (2).
+
+   Two reviewers expressed concern over the qualitative analyses (1, 3).
+
+   A reviewer also had concerns over some of the interpretations related to
+   strong and higher beliefs (1). 
+
+   The reviewers provide clear and useful recommendations on how to improve
+   the paper. I agree with two reviewers (1, 2) that this work is probably
+   better positioned around the study than just building a general case for
+   eye-tracking in HRI. I recommend the authors condense sections 1 and 2
+   and reframe the front end as motivation for the study. Moving the goals
+   of the study forward in order to better motivate the study is also a good
+   suggestion (3).
+
+   Reviewers felt the paper was well written (2) but in need of a polishing
+   (3).
+
+   I would like to reinforce R3’s observation that “demented people”
+   is a highly inappropriate label. Use “cognitive disability” instead.
+
+   As an aside, figures 1 and 2 may require permissions from the original
+   publisher. Since permissions are not usually quick, it is generally
+   better to use images that lack copyright restrictions for papers with
+   short publication timelines.
+
+Recommendation
+
+   2  (Probably reject: I would argue for rejecting this paper.)
+
+
+------------------------ Submission 1576, Review 1 ------------------------
+
+Reviewer:           external
+
+Expertise
+
+   4  (Expert)
+
+Summary of (Theme-specific) Contributions
+
+   The paper presents an overview of eye-tracking technology, how to use it
+   in HRI experiments, its advantages for the field and what has been done
+   with this technology so far. It also introduces an HRI experiment in
+   which eye-tracking technology was used with a non-anthropomorphic robot. 
+
+Strengths and Weaknesses
+
+   The paper claims to be exhaustive about the eye-tracking technology, yet
+   a considerable body of work is missing in their overview. For examples
+   please refer to the special issue  "Gaze in human-robot communication" of
+   the Interaction Studies Journal and other similar publications. 
+
+   The claim that the paper presents a new look on HRI is too bold.
+
+Soundness
+
+   As mentioned above there are completeness issues with the overview and
+   background section of the paper. The paper would greatly benefit from
+   being more thorough for example about the definition of joint attention.
+   When using terminology from developmental psychology it would be good to
+   give some background information.  
+
+   Some of the phrasing on the Interpretation section seems also to be
+   problematic. Talking about the "strong beliefs" or "... higher initial
+   belief in their cognitive model of the robot ..." when presenting
+   quantitative data of the participants is questionable. 
+
+Related Work
+
+   Please see comments in Strength weaknesses and Soundness section. 
+
+Presentation
+
+   It seems the authors tried to squeeze too many things into 8 pages. They
+   tried to give an exhaustive overview of eye tracking in the field of HRI,
+   present a study and discuss the advantages of eye tracking technology in
+   very short terms. This results, from my perspective, in a too short
+   discussion of each of the problems. For resubmission it might be better
+   to focus on your study in one paper and on the theoretical work in
+   another. Saying that, I am not sure whether there has already an overview
+   article about eye tracking in HRI been published.   
+
+Suggestions
+
+   In general it is better to avoid phrases like "We will do XY
+   exhaustively" if one is not absolutely sure this going to be the case.
+
+Recommendation
+
+   While the work presented in the paper is promising, it does not seem to
+   be ready for publication due to major structural weaknesses. Further work
+   should focus more on the presented study and should elaborate on its
+   details. 
+
+Overall Rating
+
+   2  (Probably reject: I would argue for rejecting this paper.)
+
+
+------------------------ Submission 1576, Review 2 ------------------------
+
+Reviewer:           external
+
+Expertise
+
+   4  (Expert)
+
+Summary of (Theme-specific) Contributions
+
+   Theme "Enabling Methods": The paper presents a method based on
+   eye-tracking to assess cognitive mechanisms in HRI. An overview of
+   eye-tracking is provided, and an example of HRI experiment is reported.
+
+Strengths and Weaknesses
+
+   Originality: I am not aware of any previous publication of the same
+   experiment.
+
+   Novelty: The paper is novel, but the novelty is not very high, especially
+   since the focus seems to be on convincing the reader of the benefits of
+   eye-tracking in HRI (something that is already established to some extent
+   in HRI, and to a large extent in HCI). Furthermore, eye-tracking is not
+   compared to any other technique (e.g. think aloud) to demonstrate its
+   strength.
+
+   Relevance: The paper is relevant for HRI, since it is directly reporting
+   a human-robot interaction experiment, and describes a technique based on
+   eye-tracking that is relevant for other researchers in the HRI field.
+   Although addressed to some extend by previous publications, eye-tracking
+   in HRI is still relevant to investigate in more details.
+
+Soundness
+
+   The paper argues that eye-tracking is a strong tool (which is probably
+   true), but without comparing it to any other tool. This is a strong
+   limitation of the article.
+
+   Some of the results are based on Figure 9, which has a Pearson's
+   correlation of -0.29 (closer to 0 = no correlation than to -1 = perfect
+   negative correlation), which is not a clear tendency.
+
+Related Work
+
+   # Eye-tracking as an interaction modality: there is actually more
+   prior-work than implied by the article ("only a few attempts"). The
+   prior-art covers at least industrial robots, medical robots, ground
+   robots, drones:
+     * “Moving to the centre”: A gaze-driven remote camera control for
+   teleoperation DOI:10.1016/j.intcom.2010.10.003
+     * Gaze contingent articulated robot control for robot assisted
+   minimally invasive surgery http://dx.doi.org/10.1109/IROS.2008.4651105
+     * Remote control of mobile robots through human eye gaze: the design
+   and evaluation of an interface doi:10.1117/12.799831
+     * Controlling the roomba with gaze http://youtu.be/6O2gYjRymyg
+     * Gaze-controlled driving http://dx.doi.org/10.1145/1520340.1520671
+     * The Use of Gaze to Control Drones
+   http://dx.doi.org/10.1145/2578153.2578156
+     * Teleoperation through eye gaze (TeleGaze): A multimodal approach
+   http://dx.doi.org/10.1109/ROBIO.2009.5420585
+     * Gaze-Based Controlling a Vehicle
+   https://pure.itu.dk/ws/files/38425416/Gaze_based_controlling_a_vehicle.pdf
+     * See also references to, and from, these articles.
+
+   * Furthermore, gaze has also been used extensively as an interaction
+   modality with computers, such as for assistive technologies, gaming, etc.
+     * http://wiki.cogain.org/index.php/Bibliography_Gaze_Interaction
+
+   * Passive eye-tracking has also been used as an attempt to estimate
+   intents in HRI:
+     * Investigating joint attention mechanisms through spoken human–robot
+   interaction DOI:10.1016/j.cognition.2011.05.005
+     * Estimating intent for human-robot interaction (IEEE Int. Conference
+   on Advanced Robotics 2003)
+
+   Consequently, the related and prior art should be developed, or at least
+   not reduced to "only a few attempts".
+
+Presentation
+
+   The paper is relatively well organized, although the distinction between
+   the state of the art and the experiment could be made clearer.
+
+   There are two sub-titles under section 2 (eye-tracking), namely "State of
+   Eye Tracking in Human-Robot Interaction" and "Eye Tracking as an
+   Interaction Modality" with the same level. The current structure is a bit
+   strange, in particular because the content of these two sub-sections seem
+   to overlap.  
+
+   The paper is well written, and clearly presented.
+
+   The authors claim to provide some "exhaustive" descriptions, which is not
+   the case (details below) and probably difficult anyway in a conference
+   article.
+
+Suggestions
+
+   Section 3 (method description): the author write that they provide an
+   "exhaustive summary". However, at least one eye-tracking estimation
+   technique is missing (EEG - electrooculography). See e.g. "A human-robot
+   interface based on electrooculography"
+   http://dx.doi.org/10.1109/ROBOT.2004.1307158 . And a least two
+   eye-tracking setup types are somewhat missing; the first is when the
+   eye-tracker is mounted on a mobile screen (e.g. tablet, smartphone) hold
+   by the user - see e.g. https://theeyetribe.com/products/ - ; the second
+   is when the eye-tracker (and/or sometimes face tracker, depending on the
+   needed precision) is mounted onto different targets (e.g. advertising
+   screens) and are able to detect when they are being looked at even when
+   the user, or multiple users, are moving.
+
+   Section 3 (mobile eye-tracking): the state-of-the-art frequency of
+   eye-tracking glasses is at least 60Hz, not 30Hz. See for instance the
+   newer version of the SMI glasses used in the article
+   http://www.smivision.com/en/gaze-and-eye-tracking-systems/about-smi/news/article.html?tx_ttnews[tt_news]=680&cHash=9b7c844b48f438b83fda8c8a957d00f0
+
+   In section 3.1.2 "mobile eye-tracking setup", the authors could mention
+   the possibility of using 3D head-tracking to assess the position an
+   attitude of the head of the user, as an alternative or supplement to the
+   method described by the authors and involving visual markers.
+
+   Typo page 3, in the "areas of interest" section: "... the screen can
+   divided...".
+
+   Typo in the label of the y-axis of Figure 8: "... refecrence..."
+
+   Typo in the intepretation: "Thus eye-tracking provide_..."
+
+   In the interpretation, when saying that eye-tracking provides a strong
+   tool, it would be interesting to compare it to any other technique
+   (think-aloud for instance).
+
+   In the conclusion, the authors could add that one of the limitations of
+   eye-tracking is the fact that it does not register what happens in the
+   peripheral vision, which is an important part of the human vision.
+
+Recommendation
+
+   Although the paper has some weaknesses, they can be addressed by making
+   the following improvements:
+   * Improve the state of the art description (see above comments)
+   * Improve the method descriptions (see above comments)
+   * Clarify what was known before the study, what was not sufficiently
+   covered by previous research, and what the HRI community can learn from
+   this work (be more specific than saying that eye-tracking is an
+   interesting method for assessing cognitive mechanisms in HRI, which is
+   somehow too banal).
+
+Overall Rating
+
+   3  (Overall, I would not argue for or against this paper. I am truly on the fence.)
+
+
+------------------------ Submission 1576, Review 3 ------------------------
+
+Reviewer:           external
+
+Expertise
+
+   3  (Knowledgeable)
+
+Summary of (Theme-specific) Contributions
+
+   The paper fits well into the theme of “methods”: it presents a method
+   for evaluating interactions (namely eye tracking) and provides a
+   demonstration, in the form of an experiment, for how this technology
+   could be used.
+
+Strengths and Weaknesses
+
+   Strengths:
+   - This paper addresses an important tool for HRI research, namely eye
+   tracking. It attempts to provide a comprehensive overview of eye tracker
+   technology.
+   - The paper provides an example of eye tracking in HRI in an experiment
+   with a relatively large number of participants (52 people).
+
+   Weaknesses:
+   - The paper fails to identify existing research on eye tracking in HRI,
+   severely weakening its authority as a review of the state-of-the-art.
+   - The design of the HRI experiment is unclear, and the experiment
+   doesn’t seem to address any specific research question. The paper does
+   not provide hypotheses about how the metrics are expected to change based
+   on the experimental conditions. The description of the experiment is
+   limited.
+
+Soundness
+
+   There are two parts to this paper: a review of the state-of-the-art in
+   eye tracking, and a description of an experiment conducted with a mobile
+   eye tracker.
+
+   The Review:
+   Aside from the problems of related work mentioned in the Related Work
+   section below, the review of eye tracking technology seems incomplete.
+   For example, the paper says of stationary eye trackers that “the setup
+   needs the heads of the participants to be fixed using a ophthalmologic
+   head rest for better data quality.” However, this is not true—-there
+   exist stationary (i.e., desk-mounted) eye trackers that allow free head
+   movements, such as the SRI Eyelink 1000 Head Free tracker, which achieve
+   quite good quality.
+
+   I do not have personal experience with mobile (i.e., head-mounted) eye
+   trackers, but I have seen them used without the extensive calibration
+   that the authors assert is necessary. I would like to see the authors
+   compare their tracker’s accuracy with other head-mounted eye trackers
+   that don’t require fiducial markers placed extensively throughout the
+   environment.
+
+   The Experiment:
+   The experiment is a fairly simple interaction between a user and a robot.
+   Why did the authors select this particular experiment design? 
+
+   The experiment seems to be lacking coherent hypotheses and a control
+   condition. Though there are three data visualization conditions that
+   dictate how the robot’s lights display its sensor information, it’s
+   not clear how these conditions relate to the goals of the experiment.
+   Furthermore, there are no hypotheses about how the measures will be
+   affected by the different conditions.
+
+   The conclusion contains two questions by which the experiment was
+   motivated; if these are the goals of the experiment, then they should be
+   moved to the beginning of the paper. However, the authors would still
+   need to explain how their experiment design addresses these questions,
+   because that is unclear.
+
+   There is also information lacking in the experiment description. It is
+   not clear in the description of the setup (section 4.1) whether the three
+   sensor data visualization conditions were between or within subject
+   variables, though further reading suggests that they were between-subject
+   variables. This should be made explicitly clear, however. I would also
+   like to see additional characterization of the participants and the
+   experiment: what were their ages? Did they have normal or
+   corrected-to-normal vision with the eye-tracker on? How long did the
+   experiment last? What kind of instructions were the participants
+   explicitly given at the beginning of the experiment? Did they have
+   extrinsic motivation to perform well? 
+
+   In the results section, ANOVAs require post-hoc tests to determine the
+   actual differences among the conditions. These should be performed and
+   reported, ideally with a Tukey or other correction for multiple
+   comparison, before the authors can conclude that one of the conditions
+   was significantly different from the other two.
+
+   The paper mentions that participants were asked “How does the robot
+   work?” after the two phases of the experiment. However, I did not see
+   any analysis performed on these data. What was the (perhaps qualitative)
+   result of asking this question?
+
+Related Work
+
+   Given that half of the contribution of this paper is a review of the
+   state-of-the-art in eye tracking for interactions, the related work is
+   seriously lacking. The authors assert that “the usage of eye-tracking
+   methods in HRI is sparse,” but here are just a few citations from the
+   HRI community that involve eye tracking. This is not meant to be a
+   comprehensive list, but it is meant to illustrate that the authors should
+   perform a more thorough review of the HRI literature.
+
+   Chen Yu, Paul Schermerhorn, and Matthias Scheutz. 2012. Adaptive eye gaze
+   patterns in interactions with human and artificial agents. ACM Trans.
+   Interact. Intell. Syst. 1, 2, Article 13 (January 2012), 25 pages.
+   DOI=10.1145/2070719.2070726 http://doi.acm.org/10.1145/2070719.2070726
+
+   Broz, F.; Lehmann, H.; Nehaniv, C.L.; Dautenhahn, K., "Mutual gaze,
+   personality, and familiarity: Dual eye-tracking during conversation,"
+   RO-MAN, 2012 IEEE , vol., no., pp.858,864, 9-13 Sept. 2012
+   doi: 10.1109/ROMAN.2012.6343859
+
+   Mark B. Neider, Xin Chen, Christopher A. Dickinson, Susan E. Brennan,
+   Gregory J. Zelinsky. 2010. Coordinating spatial referencing using shared
+   gaze. Psychonomic Bulletin & Review, Volume 17, Issue 5, pp 718-724. DOI:
+   10.3758/PBR.17.5.718. (Note: this is virtual agents rather than robotics,
+   but still has relevance to HRI)
+
+
+   In the paper, citation 13 is missing a journal or conference name.
+
+Presentation
+
+   This paper, while clear, is not highly fluent. There are places where
+   sentence structure is awkward, and some of the text seems more
+   stream-of-consciousness than polished, but in general the paper is still
+   comprehensible. 
+
+   The introduction in particular is difficult to understand because it is
+   not well organized. For example, in the fourth paragraph of section 1,
+   the concept of ecological validity is asserted without explanation,
+   followed by a phrase “on the other hand” that seems to equate fMRI
+   and eye tracking.
+
+   The subsection heading style varies throughout the paper, with some
+   sections using proper numbered subsections and others (like section 2)
+   displaying subsection headings with no numberings.
+
+   The paper should also use inline citations instead of referencing a
+   numbered citation. So for example, “Eivazi et al. studied the effect
+   … [6]” instead of “[6] studied the effect…”
+
+   It is extremely offensive to refer to people with mental disabilities as
+   “demented people,” as in section 3.3.1. This must be changed.
+
+   In the results section, please put all graphs at the top of the page. It
+   is difficult to find the next block of text when it is interspersed with
+   figure captions.
+
+Suggestions
+
+   I suggest the authors thoroughly examine the literature for eye tracking
+   in HRI, re-conceptualize their experiment with clear hypotheses that
+   relate to their research goals, and re-write the paper for clarity and
+   flow.
+
+   More specific suggestions are interspersed in other sections of this
+   review.
+
+Recommendation
+
+   This paper discusses eye tracking, a relevant tool for HRI research, and
+   illustrates the use of eye tracking technology with a real-world study.
+   However, due to incomplete review of the literature and a
+   confusingly-designed study, I do not think the paper is ready for
+   publication in HRI.
+
+Overall Rating
+
+   2  (Probably reject: I would argue for rejecting this paper.)
+
+
+
